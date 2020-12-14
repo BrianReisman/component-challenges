@@ -1,5 +1,6 @@
 import React from "react";
 import Stat from "./Stat";
+import StyledStats from './StyledStats.js';
 
 const Stats = (props) => {
   //the following two arrays need to have the title and props data you want paired together to occupy the same index
@@ -12,9 +13,9 @@ const Stats = (props) => {
   })
 
   return (
-    <>
+    <StyledStats>
       {statsToRender}
-    </>
+    </StyledStats>
   );
 };
 
